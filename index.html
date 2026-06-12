@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDigy Infotech - Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Password Strength Checker</h2>
+        <p class="subtitle">ProDigy Infotech - Task 03</p>
+        
+        <div class="input-container">
+            <input type="password" id="password" placeholder="Enter your password">
+            <button id="toggle-btn" type="button">Show</button>
+        </div>
+
+        <div class="meter-container">
+            <div id="strength-bar"></div>
+        </div>
+        <p id="strength-text">Strength: Empty</p>
+
+        <ul id="feedback-list">
+            <li id="len" class="invalid">❌ At least 8 characters</li>
+            <li id="upper" class="invalid">❌ At least 1 uppercase letter</li>
+            <li id="lower" class="invalid">❌ At least 1 lowercase letter</li>
+            <li id="number" class="invalid">❌ At least 1 number</li>
+            <li id="special" class="invalid">❌ At least 1 special character</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
